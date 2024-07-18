@@ -1,6 +1,6 @@
 import time
 from pypresence.presence import Presence
-app_id = '1233899778534801418'
+app_id = 'Your app id'
 time_elapsed = True
 
 RPC = Presence(app_id)
@@ -13,24 +13,24 @@ if time_elapsed == False:
 
 
 RPC.update(
-    details='Just some ',
-    state='Working on 1.0.6' ,
-    large_image='hydromel',
-    large_text='My mod',
+    details='First line',
+    state='Second Line' ,
+    large_image='Image name',
+    large_text='My image',
     buttons=[
         {
-            "label": 'Download Hydromel',
-            "url": 'https://www.curseforge.com/minecraft/mc-mods/hydromel'
+            "label": 'Your first label',
+            "url": 'Your first Url'
         },
         {
-            "label": 'Hydromel News',
-            "url": 'https://discord.gg/GXQBXWMj7s'
+            "label": 'Your second label',
+            "url": 'Your second Url'
         }
 
     ],
     start=start
 )
 
-print('Hydromel Discord Rich Presence launched!')
+print('Discord Rich Presence launched!')
 
 while True: time.sleep(15)
